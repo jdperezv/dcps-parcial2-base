@@ -1,1 +1,11 @@
+
+<div class="link-author">
+    <a>{{author.firstName}}</a>
+{{#each author.blogPost as |post|}}
+<a>{{post.title}}</a>
+<a>{{post.publishedDate}}</a>
+<a>{{post.content}}</a>
+<button value="Eliminar Post">Eliminar Post</button>
+{{/each}}
+</div>
 {{outlet}}
