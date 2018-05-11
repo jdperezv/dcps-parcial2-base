@@ -1,11 +1,17 @@
 
-<div class="author-detail">
+<div class="authors">
+    <p>{{model.profilePicture}}</p>
     <p><a>First name:</a>
     <a>{{model.firstName}}</a>
     </p>
     <p> <a>Last name:</a>
         <a>
         {{model.lastName}}</a></p>
+        <p> <a>Email:</a>
+        <a>
+        {{model.email}}</a></p>
+        <p><a>Post:</a></p>
+        
 {{#each model.blogPost as |post|}}
 <a>{{post.title}}</a>
 <a>{{post.publishedDate}}</a>
